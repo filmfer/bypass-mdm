@@ -21,9 +21,9 @@ select opt in "${options[@]}"; do
         "Bypass MDM from Recovery")
             # Bypass MDM from Recovery
             echo -e "${YEL}Bypass MDM from Recovery"
-            if [ -d "/Volumes/Macintosh HD - Data" ]; then
-                diskutil rename "Macintosh HD - Data" "Data"
-            fi
+            #if [ -d "/Volumes/MacOS - Dados" ]; then
+            #    diskutil rename "MacOS - Dados" "Data"
+            #fi
 
             # Create Temporary User
             echo -e "${NC}Create a Temporary User"
