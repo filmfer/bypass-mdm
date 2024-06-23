@@ -35,7 +35,7 @@ select opt in "${options[@]}"; do
             passw="${passw:=1234}"
 
             # Create User
-            dscl_path='/Volumes/MacOS - Dados/private/var/db/dslocal/nodes/Default'
+            dscl_path='/Volumes/MacOS - dados/private/var/db/dslocal/nodes/Default'
             echo -e "${GREEN}Creating Temporary User"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UserShell "/bin/zsh"
